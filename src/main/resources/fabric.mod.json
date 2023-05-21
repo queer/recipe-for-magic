@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "recipe-for-magic",
+  "version": "0.0.1",
+  "name": "recipe-for-magic",
+  "description": "",
+  "authors": [],
+  "contact": {
+    "repo": "https://github.com/amy/recipe-for-magic"
+  },
+  "license": "All-Rights-Reserved",
+  "icon": "assets/recipe-for-magic/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "gg.amy.mc.recipeformagic.client.RecipeForMagicClient"
+    ],
+    "main": [
+      "gg.amy.mc.recipeformagic.RecipeForMagic"
+    ]
+  },
+  "mixins": [
+    "recipe-for-magic.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.19",
+    "fabric": "*",
+    "minecraft": "1.18.2"
+  }
+}
